@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <!-- META TAGS الأساسية للـ SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Qarar | حلول الذكاء الاصطناعي وتحليل البيانات</title>
+    <meta name="description" content="شركة Smart Qarar رائدة في تحويل البيانات إلى قرارات ذكية باستخدام الذكاء الاصطناعي، هندسة البيانات، وأتمتة العمليات (n8n, Power BI) لنمو أعمالك.">
+    <meta name="keywords" content="تحليل البيانات, الذكاء الاصطناعي, هندسة البيانات, أتمتة العمليات, Power BI, n8n, تطوير مواقع, السعودية, مصر, الإمارات, قرارات ذكية, Business Intelligence">
+    <meta name="author" content="Smart Qarar">
+    <link rel="canonical" href="https://www.yourwebsite.com"> <!-- استبدل هذا برابط موقعك الفعلي -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Open Graph Meta Tags (لتحسين المشاركة على الشبكات الاجتماعية ) -->
+    <meta property="og:title" content="Smart Qarar | حلول الذكاء الاصطناعي وتحليل البيانات">
+    <meta property="og:description" content="نساعدك على تحقيق الريادة الرقمية عبر حلول مبتكرة في الذكاء الاصطناعي، تحليل البيانات، والأتمتة.">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="https://www.yourwebsite.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Smart Qarar | حلول الذكاء الاصطناعي وتحليل البيانات">
+    <meta name="twitter:description" content="نساعدك على تحقيق الريادة الرقمية عبر حلول مبتكرة في الذكاء الاصطناعي، تحليل البيانات، والأتمتة.">
+    <meta name="twitter:image" content="logo.png">
+
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-cyan: #00d4ff;
+            --deep-navy: #0a192f;
+            --light-navy: #112240;
+            /* تعديل الألوان لزيادة الوضوح */
+            --slate-gray: #a8b2d1; /* أفتح من السابق */
+            --light-slate: #ccd6f6; /* أفتح من السابق */
+            --white-blue: #e6f1ff;
+            --gradient-primary: linear-gradient(45deg, #007bff, var(--primary-cyan ));
+        }
+        html { scroll-behavior: smooth; }
+        body {
+            background-color: var(--deep-navy);
+            color: var(--light-slate); /* اللون الأساسي للنصوص */
+            font-family: 'Cairo', sans-serif;
+            font-size: 1.05rem; /* زيادة حجم الخط الأساسي */
+            font-weight: 400;
+        }
+        h1, h2, h3, h4, h5, h6 { font-weight: 800; color: var(--white-blue); }
+        .text-gradient {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .section-padding { padding: 100px 0; }
+        
+        /* --- تعديلات Navbar واللوجو --- */
+        .navbar {
+            background: rgba(10, 25, 47, 0.85);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+        }
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px; /* مسافة بين الدائرة والاسم */
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--white-blue) !important;
+        }
+        .logo-container {
+            background-color: white;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px; /* هامش داخلي حول اللوجو */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.566);
+        }
+        .logo-container img {
+            max-height: 100%;
+            max-width: 100%;
+        }
+        .nav-link { font-weight: 600; transition: color 0.3s; }
+        .nav-link:hover, .nav-link.active { color: var(--primary-cyan); }
+        /* --- نهاية تعديلات Navbar --- */
+
+        .hero {
+            padding: 180px 0 120px;
+            background: radial-gradient(circle at top right, var(--light-navy) 0%, var(--deep-navy) 70%);
+        }
+        .hero h1 { font-size: 3.8rem; line-height: 1.3; }
+        .hero p { font-size: 1.25rem; color: var(--slate-gray); max-width: 750px; margin: 25px 0; }
+        .btn-main {
+            background: var(--gradient-primary);
+            border: none; padding: 14px 35px; font-weight: 700; color: white;
+            border-radius: 10px; transition: all 0.3s ease; text-decoration: none; display: inline-block;
+        }
+        .btn-main:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 123, 255, 0.2); color: white;
+        }
+        .card-feature {
+            background: var(--light-navy); border: 1px solid #1d2d4a; padding: 35px;
+            border-radius: 15px; transition: 0.3s ease; height: 100%; text-align: center;
+        }
+        .card-feature:hover {
+            transform: translateY(-10px); border-color: var(--primary-cyan);
+            box-shadow: 0 20px 40px rgba(0, 212, 255, 0.1);
+        }
+        .card-feature i { font-size: 3rem; color: var(--primary-cyan); margin-bottom: 20px; }
+        .card-feature p { color: var(--slate-gray); } /* ضمان وضوح النص داخل الكروت */
+        .why-us-item {
+            background: var(--light-navy); padding: 25px; border-radius: 10px;
+            border-left: 4px solid var(--primary-cyan); height: 100%;
+        }
+        .why-us-item p { color: var(--light-slate); }
+        .portfolio-card {
+            background: var(--light-navy); border-radius: 20px; overflow: hidden;
+            margin-bottom: 40px; border: 1px solid #1d2d4a; transition: all 0.3s ease;
+        }
+        .portfolio-card:hover { box-shadow: 0 15px 30px rgba(0,0,0,0.2); transform: translateY(-5px); }
+        .portfolio-text { padding: 35px; }
+        .portfolio-text p { color: var(--slate-gray); }
+        .badge-tech {
+            background: rgba(0, 212, 255, 0.1); color: var(--primary-cyan);
+            border: 1px solid rgba(0, 212, 255, 0.3); padding: 6px 15px;
+            border-radius: 50px; font-size: 0.8rem; margin-left: 8px;
+            margin-bottom: 8px; display: inline-block;
+        }
+        .contact-container {
+            background: var(--light-navy); border-radius: 25px;
+            padding: 50px; border: 1px solid #1d2d4a;
+        }
+        .form-control {
+            background: var(--deep-navy); border: 1px solid #233554; color: white;
+            padding: 12px; border-radius: 8px;
+        }
+        .form-control:focus {
+            background: var(--deep-navy); color: white;
+            border-color: var(--primary-cyan); box-shadow: none;
+        }
+        footer { border-top: 1px solid #1d2d4a; }
+        .wa-float {
+            position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white;
+            width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center;
+            justify-content: center; font-size: 30px; box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+            z-index: 1000; text-decoration: none; transition: transform 0.3s;
+        }
+        .wa-float:hover { transform: scale(1.1); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#home">
+                    <div class="logo-container">
+                        <img src="logo.png" alt="شعار شركة Smart Qarar">
+                    </div>
+                    <span>Smart Qarar</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item"><a class="nav-link active" href="#home">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">خدماتنا</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#why-us">لماذا نحن؟</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">أعمالنا</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">تواصل معنا</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <h1>نصنع من بياناتك <span class="text-gradient">مستقبلاً ذكياً</span></h1>
+                        <p>في Smart Qarar، ندمج الذكاء الاصطناعي وهندسة البيانات مع الأتمتة المتقدمة، لنمنح أعمالك القوة لاتخاذ قرارات أسرع وأكثر دقة، وتحقيق نمو غير مسبوق.</p>
+                        <div class="mt-5">
+                            <a href="#portfolio" class="btn-main me-3">استكشف أعمالنا</a>
+                            <a href="#contact" class="btn btn-outline-main">ابدأ مشروعك الآن</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section-padding">
+            <div class="container">
+                <div class="text-center mx-auto" style="max-width: 600px;">
+                    <h2 class="mb-4">حلول تقنية <span class="text-gradient">متكاملة</span> لنمو أعمالك</h2>
+                    <p class="mb-5">نقدم باقة من الخدمات المصممة خصيصًا لرفع كفاءة أعمالك وتعزيز قدرتك التنافسية.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card-feature">
+                            <i class="fas fa-brain"></i>
+                            <h4>الذكاء الاصطناعي</h4>
+                            <p class="small">تطوير نماذج تعلم الآلة، أنظمة معالجة المستندات، وروبوتات الدردشة الذكية.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card-feature">
+                            <i class="fas fa-chart-pie"></i>
+                            <h4>تحليل وهندسة البيانات</h4>
+                            <p class="small">بناء خطوط بيانات (Pipelines) وتصميم لوحات تحكم تفاعلية (Dashboards) باستخدام Power BI.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card-feature">
+                            <i class="fas fa-cogs"></i>
+                            <h4>أتمتة العمليات (RPA)</h4>
+                            <p class="small">تصميم مسارات عمل آلية (Workflows) باستخدام n8n و Python لزيادة الإنتاجية.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card-feature">
+                            <i class="fas fa-code"></i>
+                            <h4>التطوير الإبداعي</h4>
+                            <p class="small">تصميم وتطوير مواقع وتطبيقات ويب سريعة، وتصميم الهويات البصرية الاحترافية.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-us" class="section-padding" style="background-color: #0d1f3a;">
+            <div class="container">
+                <div class="text-center mx-auto" style="max-width: 600px;">
+                    <h2 class="mb-4">لماذا تختار <span class="text-gradient">Smart Qarar</span>؟</h2>
+                    <p class="mb-5">نحن نجمع بين الخبرة التقنية العميقة والفهم الدقيق لمتطلبات السوق لنقدم لك قيمة حقيقية.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="why-us-item">
+                            <h5 class="mb-3">حلول مخصصة</h5>
+                            <p>لا نؤمن بالحلول الجاهزة. نحلل احتياجاتك بدقة ونصمم حلولاً تقنية مخصصة تتناسب تمامًا مع أهداف عملك.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="why-us-item">
+                            <h5 class="mb-3">تركيز على النتائج</h5>
+                            <p>هدفنا النهائي هو تحقيق نتائج ملموسة، سواء كانت زيادة في الإيرادات، خفض في التكاليف، أو تحسين في الكفاءة التشغيلية.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="why-us-item">
+                            <h5 class="mb-3">شريكك في النمو</h5>
+                            <p>نعتبر أنفسنا أكثر من مجرد مزود خدمة؛ نحن شريكك التقني الذي يدعمك في كل خطوة من خطوات رحلة التحول الرقمي.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section-padding">
+            <div class="container">
+                <div class="text-center mx-auto" style="max-width: 600px;">
+                    <h2 class="mb-4">مشاريع نفخر <span class="text-gradient">بإنجازها</span></h2>
+                    <p class="mb-5">استعراض لمجموعة من الحلول التي قدمناها لعملائنا وساهمت في نجاحهم.</p>
+                </div>
+                <div class="portfolio-card row g-0 mb-5">
+                    <div class="col-lg-6 portfolio-text d-flex flex-column justify-content-center">
+                        <h3 class="fw-bold mb-3">روبوت تغريدات ذكي (Data Engineer)</h3>
+                        <p>مشروع أتمتة متكامل يربط بين تلجرام وواجهة برمجة تطبيقات OpenAI لنشر المحتوى آلياً على منصات التواصل الاجتماعي، مما يوفر ساعات من العمل اليدوي.</p>
+                        <div class="mt-3">
+                            <span class="badge-tech">n8n</span> <span class="badge-tech">OpenAI API</span> <span class="badge-tech">Telegram Bot</span> <span class="badge-tech">Automation</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/JZaMuWpCi9A" title="مشروع روبوت الذكاء الاصطناعي" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card row g-0 flex-lg-row-reverse">
+                    <div class="col-lg-6 portfolio-text d-flex flex-column justify-content-center">
+                        <h3 class="fw-bold mb-3">نظام تحليل بيانات مصرفية</h3>
+                        <p>تصميم لوحات تحكم احترافية باستخدام Power BI لتحليل المؤشرات المالية، أداء القروض، وسلوك العملاء، مما يوفر رؤى دقيقة لدعم اتخاذ القرار الاستراتيجي.</p>
+                        <div class="mt-3">
+                            <span class="badge-tech">Power BI</span> <span class="badge-tech">SQL</span> <span class="badge-tech">Data Visualization</span> <span class="badge-tech">Banking</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/pQg8VMUPUhw" title="مشروع لوحة تحكم بنكية" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padding">
+            <div class="container text-center">
+                <div class="contact-container shadow-lg mx-auto col-lg-9">
+                    <h2 class="fw-bold mb-3">هل أنت جاهز للقرار <span class="text-gradient">الذكي</span> القادم؟</h2>
+                    <p class="mb-5">أرسل تفاصيل مشروعك الآن، وسيقوم فريقنا المختص بالتواصل معك في أقرب وقت ممكن.</p>
+                    <form action="https://formspree.io/f/xojwgbna" method="POST">
+                        <div class="row text-start">
+                            <div class="col-md-6 mb-3">
+                                <label for="fullName" class="form-label text-light-slate">الاسم الكامل</label>
+                                <input type="text" id="fullName" name="name" class="form-control" placeholder="اسمك الكريم" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label text-light-slate">البريد الإلكتروني</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="example@gmail.com" required>
+                            </div>
+                        </div>
+                        <div class="text-start mb-3">
+                            <label for="phone" class="form-label text-light-slate">رقم الهاتف (اختياري )</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="01XXXXXXXXX">
+                        </div>
+                        <div class="text-start mb-4">
+                            <label for="message" class="form-label text-light-slate">اشرح لنا كيف يمكننا مساعدتك؟</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" placeholder="أخبرنا عن فكرتك، مشروعك، أو التحدي الذي تواجهه..." required></textarea>
+                        </div>
+                        <input type="hidden" name="_subject" value="New Inquiry from Smart Qarar Website">
+                        <button type="submit" class="btn-main w-100">إرسال الطلب الآن</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-4 text-center text-slate-gray">
+        <p class="mb-0">© 2026 شركة Smart Qarar. جميع الحقوق محفوظة.</p>
+        <p class="small">تصميم وتطوير بواسطة فريق Smart Qarar</p>
+    </footer>
+
+    <a href="https://wa.me/201116109838" class="wa-float" target="_blank" aria-label="تواصل معنا عبر واتساب">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
